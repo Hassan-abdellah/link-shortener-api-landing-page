@@ -4,6 +4,7 @@
 ### npm packages used in this project
 react react-dom react-icons axios
 
+[Live Demo](https://link-shortenerer-api.netlify.app/)
 ## Available Scripts
 
 In the project directory, you can run:
