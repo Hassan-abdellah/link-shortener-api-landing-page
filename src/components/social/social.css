@@ -1,0 +1,14 @@
+.social{
+    display: flex;
+    gap:15px;
+}
+.social li a{
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+.social li a:hover{
+    transform: translateY(-2px);
+}
+.social img{
+    width: 25px;
+}

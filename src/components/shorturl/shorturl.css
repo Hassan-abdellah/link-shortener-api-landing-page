@@ -1,0 +1,24 @@
+.box{
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px 10px;
+    width: 455px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-color);
+}
+.box svg{
+    cursor: pointer;
+    font-size: 1.4rem;
+
+}
+.short-link{
+    color:#fff;
+    text-decoration: underline;
+}
+@media screen and (max-width:425px) {
+    .box{
+        max-width: calc(100% - 30px);
+    }
+}

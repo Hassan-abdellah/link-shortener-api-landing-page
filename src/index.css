@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+:root{
+    --shadow:rgba(255, 255, 255, 0.2) 0px 0px 15px,
+    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+    --dark-color:#232544;
+    --light-color:#3ccbd3;
+    --light-gray:#eff0f7;
+}
+body{
+    background-color: var(--dark-color);
+    color:#fff;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color:var(--light-color);
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+}
+.wrapper{
+    max-width: 1100px;
+    /* max-width: calc(100% - 50px); */
+    margin: 0 auto;
+}
+.fluid{
+    width: 100%;
+}
+.svg-fluid{
+    background-image: url('./svgs/Simple\ Shiny.svg');
+    background-repeat: no-repeat;
+}
+img{
+    width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width:1024px) {
+    .wrapper{
+        max-width: calc(100% - 30px);
+    }
 }

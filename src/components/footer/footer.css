@@ -1,0 +1,29 @@
+.footer{
+    margin-top: 50px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .logo{
+    font-size: 1.5rem;
+}
+.footer ul:not(:last-of-type) li{
+    margin-top: 10px;
+}
+.footer h3{
+    color:var(--light-color);
+}
+.footer a{
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+}
+.footer a:hover{
+    color:var(--light-color);
+}
+@media screen and (max-width:425px) {
+    .footer{
+        gap: 50px;
+    }
+}

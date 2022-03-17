@@ -1,0 +1,31 @@
+.hero{
+    display: flex;
+    align-items: center;
+}
+.hero-content p{
+    line-height: 1.8;
+    margin: 20px 0;
+}
+.hero-content .hero-btn{
+    background-color: var(--light-color);
+    color:#fff;
+    padding: 8px 18px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+@media screen and (max-width:425px) {
+    .hero{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-content{
+        order: 1;
+    }
+    .hero-content h1{
+        font-size: 1.4rem;
+    }
+    .hero-content p{
+        margin: 10px 0;
+    }
+}
